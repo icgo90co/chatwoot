@@ -34,10 +34,7 @@ class Enterprise::Billing::ReconcilePlanFeaturesService
   pattr_initialize [:account!]
 
   def perform
-    account.disable_features(*PREMIUM_PLAN_FEATURES)
-    account.enable_features(*current_plan_features)
-    account.enable_features(*manually_managed_features)
-    account.save!
+    # License check disabled - all features stay enabled
   end
 
   private
