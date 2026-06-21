@@ -16,7 +16,7 @@ on:
   workflow_dispatch:
 
 env:
-  DOCKER_REPO: icgo90co/chatwoot
+  DOCKER_REPO: icgocol/chatwoot
 
 permissions:
   contents: read
