@@ -1,7 +1,5 @@
-version: '3'
-
 x-base-config: &base-config
-  image: .
+  image: icgocol/chatwoot:develop
   volumes:
     - chatwoot-storage:/app/storage
   environment:
